@@ -5,7 +5,6 @@ import CartItem from "./CartItem/CartItem";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import { coupons } from "../../constants/coupons";
-import speaker from "../Products/speaker.jpg";
 
 function Cart1({ cart = [] }) {
   const [totalPrice, setTotalPrice] = useState(0);
@@ -22,7 +21,7 @@ function Cart1({ cart = [] }) {
 
     let couponm = coupon.trim().toUpperCase();
     let obj = coupons[couponm];
-    if (obj == undefined) {
+    if (obj === undefined) {
       console.log("Coupon is not applicable");
       setSuccess(false);
       setLoading(false);
@@ -63,7 +62,7 @@ function Cart1({ cart = [] }) {
 
   return (
     <>
-      {cart.length == 0 ? (
+      {cart.length === 0 ? (
         <>
           <h1>Your cart is empty</h1>
         </>
@@ -104,7 +103,7 @@ function Cart1({ cart = [] }) {
               </div>
 
               <>
-                {loading == true ? (
+                {loading === true ? (
                   <div className="coupon">
                     <TextField
                       value={coupon}
@@ -123,7 +122,7 @@ function Cart1({ cart = [] }) {
                   </div>
                 ) : (
                   <>
-                    {success == true ? (
+                    {success === true ? (
                       <div className="smsg">
                         <h4>Code applied !</h4>
 

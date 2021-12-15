@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 // import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
 // import {
@@ -8,7 +8,7 @@ import { useHistory } from "react-router-dom";
 // } from "../../../redux/Shopping/shopping-actions";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
+
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
